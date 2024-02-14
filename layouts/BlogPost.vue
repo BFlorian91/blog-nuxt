@@ -4,18 +4,21 @@ const { next, prev } = useContent();
 
 <template>
   <div class="container">
-    <div class="content">
+    <div class="prose prose-slate">
       <slot />
     </div>
-    <div v-if="prev" class="prev-link">
-      <p>Read prev post</p>
-      <NuxtLink :to="prev._path"> prev: {{ prev.title }} </NuxtLink>
-      <p>{{ prev.description }}</p>
-    </div>
-    <div v-if="next" class="next-link">
-      <p>Read next post</p>
-      <NuxtLink :to="next._path"> Next: {{ next.title }} </NuxtLink>
-      <p>{{ next.description }}</p>
+    <div class="flex">
+      <div v-if="prev && prev.title !== 'Home'" class="">
+        <NuxtLink class="m-4 p-4 bg-black text-white rounded" :to="prev._path">
+          prev: {{ prev.title }}
+        </NuxtLink>
+      </div>
+      <div v-if="next" class="">
+        <NuxtLink class="m-4 p-4 bg-black text-white rounded" :to="next._path">
+          Next: {{ next.title }}
+        </NuxtLink>
+        <!-- <p class="p-4">{{ next.description }}</p> -->
+      </div>
     </div>
   </div>
 </template>
