@@ -1,7 +1,15 @@
 <script setup>
+import { useI18n } from "vue-i18n";
+
 const { data } = await useAsyncData("home", () =>
   queryContent("/articles").find(),
 );
+
+const { locale } = useI18n();
+
+function changeLocale(lang) {
+  locale.value = lang;
+}
 </script>
 
 <!-- <template> -->
@@ -20,10 +28,16 @@ const { data } = await useAsyncData("home", () =>
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
       <div class="mx-auto max-w-2xl">
         <h2 class="text-3xl font-bold tracking-tight text-text sm:text-4xl">
-          From the blog
+          {{ $t("welcome") }}
         </h2>
+        <button class="mt-2 mx-4 p-4 bg-accent" @click="changeLocale('en')">
+          English
+        </button>
+        <button class="mt-2 bg-accent" @click="changeLocale('fr')">
+          Français
+        </button>
         <p class="mt-2 text-lg leading-8 text-primary">
-          Learn how to grow your business with our expert advice.
+          {{ $t("description") }}
         </p>
         <div
           class="mt-10 space-y-16 border-t border-secondary pt-10 sm:mt-16 sm:pt-16"
@@ -39,8 +53,7 @@ const { data } = await useAsyncData("home", () =>
               }}</time>
               <a
                 :href="post.category.href"
-                :style="`background-color: ${post.category.bg_color}; color: ${post.category.color}`"
-                class="relative z-10 rounded-full px-3 py-1.5 font-medium hover:bg-gray-100"
+                class="relative z-10 rounded-full px-3 py-1.5 font-medium bg-accent hover:bg-secondary transition duration-200 ease-in-out"
                 >{{ post.category.title }}</a
               >
             </div>
@@ -53,7 +66,7 @@ const { data } = await useAsyncData("home", () =>
                   {{ post.title }}
                 </a>
               </h3>
-              <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">
+              <p class="mt-5 line-clamp-3 text-sm leading-6 text-secondary">
                 {{ post.description }}
               </p>
             </div>
@@ -64,7 +77,7 @@ const { data } = await useAsyncData("home", () =>
                 class="h-10 w-10 rounded-full bg-gray-50"
               />
               <div class="text-sm leading-6">
-                <p class="font-semibold text-gray-900">
+                <p class="font-semibold text-accent">
                   <a :href="post.author.href">
                     <span class="absolute inset-0" />
                     {{ post.author.name }}
