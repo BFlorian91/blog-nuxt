@@ -4,6 +4,13 @@ const { next, prev } = useContent();
 
 <template>
   <div class="container">
+    <nav>
+      <ul class="flex gap-4">
+        <li><NuxtLink to="/">Home</NuxtLink></li>
+        <li><NuxtLink to="/about">About</NuxtLink></li>
+        <li><NuxtLink to="/contact">Contact</NuxtLink></li>
+      </ul>
+    </nav>
     <div class="prose prose-slate">
       <slot />
     </div>
