@@ -1,12 +1,7 @@
 <script setup>
-import { useI18n } from "vue-i18n";
-
 const { data } = await useAsyncData("home", () =>
   queryContent("/articles").find(),
 );
-
-const { locale } = useI18n();
-const changeLocale = (lang) => (locale.value = lang);
 </script>
 
 <template>
@@ -16,12 +11,6 @@ const changeLocale = (lang) => (locale.value = lang);
         <h2 class="text-3xl font-bold tracking-tight text-text sm:text-4xl">
           {{ $t("welcome") }}
         </h2>
-        <button class="mt-2 mx-4 p-4 bg-accent" @click="changeLocale('en')">
-          English
-        </button>
-        <button class="mt-2 bg-accent" @click="changeLocale('fr')">
-          Français
-        </button>
         <p class="mt-2 text-lg leading-8 text-primary">
           {{ $t("description") }}
         </p>
