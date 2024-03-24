@@ -15,7 +15,7 @@ const { data } = await useAsyncData("home", () =>
           {{ $t("description") }}
         </p>
         <div
-          class="mt-10 space-y-16 border-t border-secondary pt-10 sm:mt-16 sm:pt-16"
+          class="mt-10 space-y-16 border-t border-secondary pt-10 sm:mt-10 sm:pt-16"
         >
           <article
             v-for="post in data"
@@ -28,7 +28,7 @@ const { data } = await useAsyncData("home", () =>
               }}</time>
               <a
                 :href="post.category.href"
-                class="relative z-10 rounded-full px-3 py-1.5 font-medium bg-accent hover:bg-secondary transition duration-200 ease-in-out"
+                class="relative z-10 rounded-full px-3 py-1.5 font-medium bg-secondary hover:bg-accent transition duration-200 ease-in-out"
                 >{{ post.category.title }}</a
               >
             </div>
@@ -36,10 +36,10 @@ const { data } = await useAsyncData("home", () =>
               <h3
                 class="mt-3 text-lg font-semibold leading-6 text-primary group-hover:text-text transition duration-200 ease-in-out"
               >
-                <a :href="post.href">
+                <NuxtLink to="/articles/first">
                   <span class="absolute inset-0" />
                   {{ post.title }}
-                </a>
+                </NuxtLink>
               </h3>
               <p class="mt-5 line-clamp-3 text-sm leading-6 text-secondary">
                 {{ post.description }}

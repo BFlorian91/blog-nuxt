@@ -1,5 +1,5 @@
 <template>
-  <main>
+  <main class="h-screen">
     <ContentDoc />
   </main>
 </template>

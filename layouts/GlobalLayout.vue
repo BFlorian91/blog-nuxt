@@ -21,7 +21,7 @@ const changeSiteLanguage = (lang: string) => {
     <nav>
       <ul class="flex gap-2 justify-end items-center w-full pt-8 pr-8">
         <li class="neon-box p-1.5 rounded-md">
-          <NuxtLink to="/blog">Blog</NuxtLink>
+          <NuxtLink to="/">Blog</NuxtLink>
         </li>
         <li class="neon-box p-1.5 rounded-md">
           <NuxtLink to="/about">About</NuxtLink>
