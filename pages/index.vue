@@ -6,23 +6,9 @@ const { data } = await useAsyncData("home", () =>
 );
 
 const { locale } = useI18n();
-
-function changeLocale(lang) {
-  locale.value = lang;
-}
+const changeLocale = (lang) => (locale.value = lang);
 </script>
 
-<!-- <template> -->
-<!--   <div class="flex flex-col"> -->
-<!--     <h1>Home</h1> -->
-<!--     <div v-for="post in data" :key="post.title"> -->
-<!--       <div class="p-4"> -->
-<!--         <NuxtLink :to="post._path">{{ post.title }}</NuxtLink> -->
-<!--         <p>{{ post.description }}</p> -->
-<!--       </div> -->
-<!--     </div> -->
-<!--   </div> -->
-<!-- </template> -->
 <template>
   <div class="bg-background py-24 sm:py-32">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
