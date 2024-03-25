@@ -19,22 +19,25 @@ const changeSiteLanguage = (lang: string) => {
 <template>
   <div class="bg-background text-primary">
     <nav>
-      <ul class="flex gap-2 justify-end items-center w-full pt-8 pr-8">
-        <li class="neon-box p-1.5 rounded-md">
+      <ul class="flex gap-2 justify-end items-center w-full pt-8 pr-8 relative">
+        <li class="neon-box p-1.5 rounded-md absolute left-10 text-3xl">
+          <NuxtLink to="/">Florian.B</NuxtLink>
+        </li>
+        <li class="neon-box hover:text-background p-1.5 rounded-md">
           <NuxtLink to="/">Blog</NuxtLink>
         </li>
-        <li class="neon-box p-1.5 rounded-md">
+        <li class="neon-box hover:text-background p-1.5 rounded-md">
           <NuxtLink to="/about">About</NuxtLink>
         </li>
-        <li class="neon-box p-1.5 rounded-md">
+        <li class="neon-box hover:text-background p-1.5 rounded-md">
           <NuxtLink to="/contact">Contact</NuxtLink>
         </li>
-        <li class="neon-box rounded-md p-1.5">
+        <li class="neon-box hover:text-background rounded-md p-1.5">
           <NuxtLink to="/projects">
             <img src="/public/GithubAltIcon.svg" class="w-4 h-4 neon-box" />
           </NuxtLink>
         </li>
-        <li class="neon-box rounded-md p-1.5">
+        <li class="neon-box hover:text-background rounded-md p-1.5">
           <NuxtLink to="/projects">
             <img
               src="/public/LinkedinAltIcon.svg"
