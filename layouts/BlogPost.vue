@@ -4,13 +4,6 @@ const { next, prev } = useContent();
 
 <template>
   <div class="container">
-    <nav>
-      <ul class="flex gap-4">
-        <li><NuxtLink to="/">Home</NuxtLink></li>
-        <li><NuxtLink to="/about">About</NuxtLink></li>
-        <li><NuxtLink to="/contact">Contact</NuxtLink></li>
-      </ul>
-    </nav>
     <div class="prose prose-slate">
       <slot />
     </div>
@@ -24,7 +17,6 @@ const { next, prev } = useContent();
         <NuxtLink class="m-4 p-4 bg-black text-white rounded" :to="next._path">
           Next: {{ next.title }}
         </NuxtLink>
-        <!-- <p class="p-4">{{ next.description }}</p> -->
       </div>
     </div>
   </div>
