@@ -1,5 +1,6 @@
 ---
  id: 12 
+ slug: themes-with-provider
  title: Themes with Provider last post
  href: #
  description: 'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel iusto corrupti dicta laboris incididunt.'

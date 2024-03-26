@@ -1,5 +1,6 @@
 ---
  id: 7
+ slug: 'routing-system-in-flutter'
  title: Routing system in Flutter
  href: #
  description: 'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel iusto corrupti dicta laboris incididunt.'

@@ -1,5 +1,6 @@
 ---
  id: 5
+ slug: display-jsx-array
  title: 'Display an array in jsx'
  href: #
  description: 'Today it’s about: how to loop over an array to render its contents'

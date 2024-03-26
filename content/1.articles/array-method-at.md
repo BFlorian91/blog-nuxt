@@ -1,5 +1,6 @@
 ---
  id: 4
+ slug: "array-method-at"
  title: '2022 Array Feature .at()'
  href: '/articles/array-method-at' 
  description: 'Really good new for us. Now we can access to any index with the method .at()'

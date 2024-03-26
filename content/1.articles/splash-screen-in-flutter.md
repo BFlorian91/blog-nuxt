@@ -1,5 +1,6 @@
 ---
  id: 8
+ slug: splash-screen-in-flutter
  title: Routing system in Flutter
  href: #
  description: 'On many applications, there is a sort of loading page when they are launched. This is what we call a splash screen and we will see here how to do this thing in the simplest way possible.'

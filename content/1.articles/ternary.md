@@ -1,5 +1,6 @@
 ---
  id: 11
+ slug: ternary
  title: The ternary WTF ? 🚀
  href: #
  description: 'The ternary, the best way to understand it, it’s an example'
