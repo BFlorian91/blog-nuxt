@@ -2,10 +2,10 @@
  id: 8
  title: Routing system in Flutter
  href: #
- description: 'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel iusto corrupti dicta laboris incididunt.'
- date: 'Mar 16, 2020'
- datetime: '2020-03-16'
- category: { title: 'Marketing', href: '#' }
+ description: 'On many applications, there is a sort of loading page when they are launched. This is what we call a splash screen and we will see here how to do this thing in the simplest way possible.'
+ date: 'January 30, 2021'
+ datetime: '2021-01-30'
+ category: { title: 'Flutter', href: '#' }
  author: {
      name: 'Michael Foster',
      role: 'Co-Founder / CTO',

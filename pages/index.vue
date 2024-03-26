@@ -1,6 +1,6 @@
 <script setup>
 const { data } = await useAsyncData("home", () =>
-  queryContent("/articles").find(),
+  queryContent("articles").sort({ datetime: -1 }).find(),
 );
 </script>
 
@@ -37,7 +37,7 @@ const { data } = await useAsyncData("home", () =>
               <h3
                 class="mt-3 text-lg font-semibold leading-6 text-primary group-hover:text-text transition duration-200 ease-in-out"
               >
-                <NuxtLink to="/articles/first">
+                <NuxtLink :to="post.url">
                   <span class="absolute inset-0" />
                   {{ post.title }}
                 </NuxtLink>

@@ -1,11 +1,11 @@
 ---
  id: 4
  title: '2022 Array Feature .at()'
- href: #
- description: 'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel iusto corrupti dicta laboris incididunt.'
- date: 'Mar 16, 2020'
- datetime: '2020-03-16'
- category: { title: 'Marketing', href: '#' }
+ href: '/articles/array-method-at' 
+ description: 'Really good new for us. Now we can access to any index with the method .at()'
+ date: 'June 24 2022'
+ datetime: '2022-06-24'
+ category: { title: 'Javascript', href: '#' }
  author: {
      name: 'Michael Foster',
      role: 'Co-Founder / CTO',
