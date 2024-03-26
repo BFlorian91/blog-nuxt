@@ -15,7 +15,7 @@
  }
 ---
 
-![Flutter logo](./flutter.png)
+![Flutter logo](/flutter.png)
 
 Today I'm gonna show you, how to make a simple routing system with Flutter.
 

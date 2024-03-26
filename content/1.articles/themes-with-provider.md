@@ -22,7 +22,7 @@ With provider, we can change that, and pass data or services where is it really 
 
 #### What are we building:
 <p style="text-align: center">
-  <image width="250" src="./darkmode.gif" />
+  <image width="250" src="/darkmode.gif" />
 </p>
 
 #### Project architecture

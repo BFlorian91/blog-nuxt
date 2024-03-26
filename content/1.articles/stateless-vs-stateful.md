@@ -90,7 +90,7 @@ Has you can see, it's just a simple static widget, nothing can be change in this
 ```
 
 <p style="text-align: center">
-  <image width="250" src="./daynight.gif" />
+  <image width="250" src="/daynight.gif" />
 </p>
 
 With the stateful widget, it's really cool because the state can
