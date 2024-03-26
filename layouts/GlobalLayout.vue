@@ -36,18 +36,26 @@ const changeSiteLanguage = (lang: string) => {
         </li>
         <li class="neon-box hover:text-background rounded-md p-1.5">
           <NuxtLink to="/projects">
-            <img src="/GithubAltIcon.svg" class="w-4 h-4 neon-box" />
+            <img
+              src="/GithubAltIcon.svg"
+              alt="github logo"
+              class="w-4 h-4 neon-box"
+            />
           </NuxtLink>
         </li>
         <li class="neon-box hover:text-background rounded-md p-1.5">
           <NuxtLink to="/projects">
-            <img src="/LinkedinAltIcon.svg" class="w-4 h-4 p-0 neon-box" />
+            <img
+              src="/LinkedinAltIcon.svg"
+              alt="linkedin logo"
+              class="w-4 h-4 p-0 neon-box"
+            />
           </NuxtLink>
         </li>
 
         <li class="neon-box rounded-md p-1.5">
           <NuxtLink to="/projects">
-            <img src="/TwitterXAlt.svg" class="w-4 h-4" />
+            <img src="/TwitterXAlt.svg" alt="twitter logo" class="w-4 h-4" />
           </NuxtLink>
         </li>
         <li class="relative neon-box rounded-md p-1">
@@ -55,7 +63,7 @@ const changeSiteLanguage = (lang: string) => {
             class="cursor-pointer flex items-center"
             @click="toggleMenuDropdown"
           >
-            <img src="/LanguageIcon.svg" class="w-5 h-5" />
+            <img src="/LanguageIcon.svg" alt="language icon" class="w-5 h-5" />
           </a>
           <div
             v-if="isDropdownMenuOpen"
