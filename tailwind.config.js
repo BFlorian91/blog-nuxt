@@ -5,9 +5,10 @@ export default {
     extend: {
       colors: {
         primary: "#b6c3b3",
-        secondary: "#445457",
-        accent: "#72c36e",
+        secondary: "#85A1A3",
+        accent: "#00F490",
         text: "#eff3ee",
+        text_dark: "#080808",
         background: "#080a08",
       },
     },

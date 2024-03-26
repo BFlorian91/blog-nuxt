@@ -29,7 +29,7 @@ const { data } = await useAsyncData("home", () =>
               }}</time>
               <a
                 :href="post.category.href"
-                class="relative z-10 rounded-full px-3 py-1.5 font-medium bg-secondary hover:bg-accent transition duration-200 ease-in-out"
+                class="relative z-10 rounded-full px-3 py-1.5 font-medium text-text_dark bg-secondary hover:bg-accent transition duration-200 ease-in-out"
                 >{{ post.category.title }}</a
               >
             </div>

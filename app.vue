@@ -5,7 +5,7 @@ useHead({
 });
 
 useSeoMeta({
-  viewport: "width=device-width, initial-scale=1, maximum-scale=1",
+  viewport: "width=device-width, initial-scale=1, maximum-scale=5",
   title: "Flob Blog",
   description:
     "This is a blog where I write about my journey as a software engineer.",
