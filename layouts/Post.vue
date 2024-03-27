@@ -4,7 +4,7 @@ const { next, prev } = useContent();
 
 <template>
   <div class="container">
-    <div class="prose prose-slate">
+    <div class="prose prose-slate bg-red-400">
       <slot />
     </div>
     <div class="flex">

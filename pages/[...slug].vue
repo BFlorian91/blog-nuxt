@@ -1,7 +1,7 @@
 <template>
-  <main class="h-screen flex justify-center">
-    <div class="h-screen sm:w-1/2 pt-10">
+  <section class="min-h-screen w-full flex justify-center">
+    <div class="min-h-screen w-full sm:w-1/2 sm:mt-20 p-10">
       <ContentDoc />
     </div>
-  </main>
+  </section>
 </template>

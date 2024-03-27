@@ -35,7 +35,7 @@ const changeSiteLanguage = (lang: string) => {
           <NuxtLink to="/contact">Contact</NuxtLink>
         </li>
         <li class="neon-box hover:text-background rounded-md p-1.5">
-          <NuxtLink to="/projects">
+          <NuxtLink to="https://github.com/BFlorian91" target="_blank">
             <img
               src="/GithubAltIcon.svg"
               alt="github logo"
@@ -44,7 +44,10 @@ const changeSiteLanguage = (lang: string) => {
           </NuxtLink>
         </li>
         <li class="neon-box hover:text-background rounded-md p-1.5">
-          <NuxtLink to="/projects">
+          <NuxtLink
+            to="https://www.linkedin.com/in/florianbeaumont/"
+            target="_blank"
+          >
             <img
               src="/LinkedinAltIcon.svg"
               alt="linkedin logo"
@@ -54,7 +57,7 @@ const changeSiteLanguage = (lang: string) => {
         </li>
 
         <li class="neon-box rounded-md p-1.5">
-          <NuxtLink to="/projects">
+          <NuxtLink to="https://twitter.com/flbeaumo" target="_blank">
             <img src="/TwitterXAlt.svg" alt="twitter logo" class="w-4 h-4" />
           </NuxtLink>
         </li>
@@ -85,7 +88,9 @@ const changeSiteLanguage = (lang: string) => {
         </li>
       </ul>
     </nav>
-    <slot />
+    <main class="min-h-screen w-full bg-background">
+      <slot />
+    </main>
   </div>
 </template>
 
