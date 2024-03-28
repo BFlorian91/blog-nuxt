@@ -32,7 +32,7 @@ const changeSiteLanguage = (lang: string) => {
           <NuxtLink to="/about">About</NuxtLink>
         </li>
         <li class="neon-box hover:text-background p-1.5 rounded-md">
-          <NuxtLink to="/contact">Contact</NuxtLink>
+          <NuxtLink to="/">Contact</NuxtLink>
         </li>
         <li class="neon-box hover:text-background rounded-md p-1.5">
           <NuxtLink to="https://github.com/BFlorian91" target="_blank">

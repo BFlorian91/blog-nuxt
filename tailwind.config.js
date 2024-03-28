@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./public/**/*.html", "./src/**/*.{js,jsx,ts,tsx,vue}"],
+  content: ["./public/**/*.html", "./src/**/*.{js,jsx,ts,tsx,vue,md}"],
   theme: {
     extend: {
       colors: {
@@ -10,6 +10,7 @@ export default {
         text: "#eff3ee",
         text_dark: "#080808",
         background: "#080a08",
+        debug: "#FF99CF",
       },
     },
   },

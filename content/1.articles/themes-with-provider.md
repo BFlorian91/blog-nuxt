@@ -27,7 +27,7 @@ With provider, we can change that, and pass data or services where is it really 
 
 #### Project architecture
 <p style="text-align: center">
-  <image width="50" src="./archi.png" />
+  <image width="50" src="/archi.png" />
 </p>
 
 
