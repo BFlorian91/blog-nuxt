@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ["./public/**/*.html", "./src/**/*.{js,jsx,ts,tsx,vue,md}"],
+  darkMode: "class",
   theme: {
     extend: {
       colors: {
@@ -12,6 +13,22 @@ export default {
         background: "#080a08",
         debug: "#FF99CF",
       },
+      typography: (theme) => ({
+        DEFAULT: {
+          css: {
+            color: theme("colors.text"),
+            h1: {
+              color: theme("colors.text"),
+            },
+            a: {
+              color: theme("colors.accent"),
+              "&:hover": {
+                color: theme("colors.accent"),
+              },
+            },
+          },
+        },
+      }),
     },
   },
   plugins: [require("@tailwindcss/typography")],
