@@ -5,6 +5,7 @@ export default defineNuxtConfig({
     "@nuxt/content",
     "@nuxtjs/tailwindcss",
     "@nuxtjs/eslint-module",
+    "@nuxtjs/google-fonts",
     "@nuxtjs/i18n",
   ],
   i18n: {
@@ -14,6 +15,14 @@ export default defineNuxtConfig({
     ],
     langDir: "locales/",
     defaultLocale: "en",
+  },
+  googleFonts: {
+    preload: true,
+    families: {
+      Inter: [400, 700],
+      Oswald: [700],
+      SourceSansPro: [400],
+    },
   },
   content: {
     documentDriven: true,

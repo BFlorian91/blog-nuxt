@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ["./public/**/*.html", "./src/**/*.{js,jsx,ts,tsx,vue,md}"],
-  darkMode: "class",
+  darkMode: true,
   theme: {
     extend: {
       colors: {
@@ -17,14 +17,29 @@ export default {
         DEFAULT: {
           css: {
             color: theme("colors.text"),
+            fontFamily: "SourceSansPro",
+            maxWidth: "100ch",
             h1: {
               color: theme("colors.text"),
+              fontFamily: "Oswald",
+              fontweight: "700",
+              fontSize: "4rem",
             },
             a: {
-              color: theme("colors.accent"),
+              color: theme("colors.text"),
+              textDecoration: "none",
               "&:hover": {
                 color: theme("colors.accent"),
               },
+            },
+            blockquote: {
+              color: theme("colors.text"),
+            },
+            p: {
+              color: theme("colors.text"),
+            },
+            strong: {
+              color: theme("colors.text"),
             },
           },
         },

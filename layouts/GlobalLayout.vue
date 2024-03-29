@@ -21,7 +21,7 @@ const changeSiteLanguage = (lang: string) => {
     <nav>
       <ul class="flex gap-2 justify-end items-center w-full pt-8 pr-8 relative">
         <li
-          class="neon-box p-1.5 rounded-md absolute left-10 text-3xl hidden sm:block"
+          class="gradient-hover p-1.5 rounded-md absolute left-10 text-3xl hidden sm:block"
         >
           <NuxtLink to="/">Florian.B</NuxtLink>
         </li>

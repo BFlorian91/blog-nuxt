@@ -19,7 +19,7 @@ When you are beginner in programming, one of the first thing you have got to pro
 
 That's cool, but if we have many conditions, your code can look like a garbage:
 
-<h2 style="color: #ff5e78"># Bad Practice</h2>
+<h2 class="text-red-400"># Bad Practice</h2>
 
 #### 1-  **If, Else if, Else Statement**
 
