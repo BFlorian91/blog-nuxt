@@ -25,6 +25,18 @@ export default {
               fontweight: "700",
               fontSize: "4rem",
             },
+            ".title": {
+              color: theme("colors.primary"),
+              fontFamily: "Oswald",
+              fontweight: "700",
+              fontSize: "1.5rem",
+            },
+            ".description": {
+              color: theme("colors.secondary"),
+              fontFamily: "SourceSansPro",
+              fontweight: "400",
+              fontSize: "1.2rem",
+            },
             a: {
               color: theme("colors.text"),
               textDecoration: "none",

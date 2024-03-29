@@ -21,3 +21,10 @@ useSeoMeta({
     </NuxtLayout>
   </div>
 </template>
+
+<style>
+* {
+  scroll-behavior: smooth;
+  scrollbar-color: #080a08 #080a08;
+}
+</style>

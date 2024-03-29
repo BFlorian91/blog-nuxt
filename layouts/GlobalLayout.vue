@@ -20,11 +20,11 @@ const changeSiteLanguage = (lang: string) => {
   <div class="bg-background text-primary">
     <nav>
       <ul class="flex gap-2 justify-end items-center w-full pt-8 pr-8 relative">
-        <li
-          class="gradient-hover p-1.5 rounded-md absolute left-10 text-3xl hidden sm:block"
-        >
-          <NuxtLink to="/">Florian.B</NuxtLink>
-        </li>
+        <!-- <li -->
+        <!--   class="gradient-hover p-1.5 rounded-md absolute left-10 text-3xl hidden sm:block" -->
+        <!-- > -->
+        <!--   <NuxtLink to="/">Florian.B</NuxtLink> -->
+        <!-- </li> -->
         <li class="neon-box hover:text-background p-1.5 rounded-md">
           <NuxtLink to="/">Blog</NuxtLink>
         </li>
